@@ -13,21 +13,18 @@ A modern web application for discovering, collecting, and organizing artworks fr
 
 ## 🚀 Live Demo
 
-**[Visit ArtVault →](https://your-deployed-app.vercel.app)**
+**[Visit ArtVault →](https://artvault-delta.vercel.app)**
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: Next.js 15, React 19, Bootstrap 5
+- **Backend APIs**: Custom User API and Sites API (Node.js/Express)
 - **Authentication**: JWT (JSON Web Tokens)
+- **Database**: MongoDB Atlas
 - **State Management**: Jotai
 - **Data Fetching**: SWR with caching
-- **Backend**: Node.js, Express, MongoDB
 - **Deployment**: Vercel
-- **API**: Metropolitan Museum of Art Collection API
-
-## 📸 Screenshots
-
-*Add screenshots here*
+- **External API**: Metropolitan Museum of Art Collection API
 
 ## 🏃‍♂️ Quick Start
 
@@ -55,7 +52,7 @@ cp .env.example .env.local
 
 4. **Configure environment variables**
 ```env
-NEXT_PUBLIC_API_URL=your-backend-api-url
+NEXT_PUBLIC_API_URL=your-user-api-url
 ```
 
 5. **Start development server**
@@ -68,41 +65,17 @@ npm run dev
 http://localhost:3000
 ```
 
-## 🎯 How It Works
+## 🔧 Architecture
 
-1. **Discover** - Browse the vast Metropolitan Museum collection
-2. **Search** - Use advanced filters to find specific artworks
-3. **Collect** - Save your favorites to personal collections
-4. **Organize** - Track your search history and discoveries
-5. **Share** - Build your curated art collection
+This project uses a custom backend architecture with two main APIs:
 
-## 🔧 Development
-
-### Project Structure
-```
-├── components/          # Reusable UI components
-├── lib/                # Utilities and API helpers
-├── pages/              # Next.js pages and API routes
-├── public/             # Static assets
-├── styles/             # Global styles and themes
-└── store.js            # Global state management
-```
-
-### Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+- **User API** - Handles authentication, favorites, and search history
+- **Sites API** - Manages site data and additional content
+- **Frontend** - Next.js application consuming both APIs
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
@@ -118,8 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Ajaypartap Singh Maan**
 - GitHub: [@AjayMaan13](https://github.com/AjayMaan13)
-- LinkedIn: [Ajaypartap Singh Maan](https://linkedin.com/in/yourprofile)
-- Portfolio: [Your Portfolio](https://yourportfolio.com)
+- LinkedIn: [Ajaypartap Singh Maan](https://linkedin.com/in/ajaypartap-singh-maan)
 
 ---
 
